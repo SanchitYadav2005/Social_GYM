@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SanchitYadav2005/Social_GYM/issues"
   },
-  "homepage": "https://github.com/SanchitYadav2005/Social_GYM#readme"
+  "homepage": "https://github.com/SanchitYadav2005/Social_GYM#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
