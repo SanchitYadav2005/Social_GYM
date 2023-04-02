@@ -1,0 +1,19 @@
+{
+  "name": "gymproject",
+  "version": "1.0.0",
+  "description": "a gym website where you can store you workout and dite plan and let people rate it and give some feedbacks.Just like insta and fb for gym freeks.",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanchitYadav2005/Social_GYM.git"
+  },
+  "author": "Sanchit Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanchitYadav2005/Social_GYM/issues"
+  },
+  "homepage": "https://github.com/SanchitYadav2005/Social_GYM#readme"
+}
