@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-body,html {
-    background: url("https://i.imgur.com/Voxlt4j.jpg") no-repeat center center fixed;
-    background-size: cover;
-    min-height: 100%;
-    height: 100%;
-}
-
 nav {
     font-family: 'Poppins', sans-serif;
     border-radius: 50px !important;
