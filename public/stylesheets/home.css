@@ -6,7 +6,6 @@
 }
 #header-img{
     width: 30%;
-    opacity: 0.5;
     border-right: 5px solid;
     border-bottom: 5px solid;
     border-color: #86FF70;
@@ -17,4 +16,19 @@ p{
     margin-top: 2em;
     font-size: 4em;
     color: #86FF70;
+}
+button{
+    color: 	#fefae0;
+    border:2px solid #86FF70;
+    background-color: black;
+    font-size: 1.5em;
+    padding: 1em 2em 1em 2em;
+    border-radius: 2em;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #86FF70;
+    box-shadow: #86FF70 0px 5px 15px;
+    color: black;
 }
