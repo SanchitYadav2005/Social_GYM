@@ -39,6 +39,7 @@ button:hover{
 .mid-section{
     display: flex;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 5em;
 }
 .gym-card{
     margin-left: 2em;
@@ -61,7 +62,7 @@ button:hover{
 }
 .card-heading{
     color: #86FF70;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 .card-img{
     border-left: 5px solid;
@@ -69,9 +70,19 @@ button:hover{
     border-bottom: 5px solid;
     border-color: #86FF70;
     padding: 1em;
+    transition: all 0.3s;
 }
 .card-info{
     font-size: 2em;
     margin-top: 1em;
     color: #bde0fe;
+}
+#padding-top{
+    padding-top: 0.5em;
+}
+.card-img:hover{
+    box-shadow: #86FF70 0px 5px 15px;
+    cursor: pointer;
+    border: none;
+    padding: 0%;
 }
