@@ -32,3 +32,9 @@ button:hover{
     box-shadow: #86FF70 0px 5px 15px;
     color: black;
 }
+
+
+.card {
+    width: 40px;
+    color: #86FF70;
+}
