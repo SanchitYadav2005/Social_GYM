@@ -1,0 +1,19 @@
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    background-color: #494F55;
+    padding: 3em;
+}
+.footer-text,.footer-links a{
+    font-size: 1.2em;
+    color: #bde0fe;
+}
+.footer-links a{
+    text-decoration:none;
+    margin-left: 1em;
+    transition:all 0.2s;
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
