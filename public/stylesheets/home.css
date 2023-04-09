@@ -16,7 +16,7 @@
     padding-right: 1em;
     padding-bottom: 1em;
 }
-p{
+.main-p{
     margin-top: 2em;
     font-size: 4em;
     color: #86FF70;
@@ -43,22 +43,35 @@ button:hover{
 .gym-card{
     margin-left: 2em;
     margin-right: 2em;
-    border-right: 5px solid;
-    border-bottom: 5px solid;
-    border-color: #86FF70;
     width:30%;  
     text-align: center;
-    padding-right: 1em;
-    padding-bottom: 1em;
 }
 .mid-head{
     text-align: center;
-    margin-bottom: 5em;
     margin-top: 5em;
+    margin-bottom: 5em;
     color: #86FF70;
+}
+.mid-head h1{
+    margin-bottom: 2em;
+}
+.mid-head p{
+    font-size: 3em;
+    color: #bde0fe;
 }
 .card-heading{
     color: #86FF70;
-    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+.card-img{
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    border-color: #86FF70;
+    padding: 1em;
+}
+.card-info{
     font-size: 2em;
+    margin-top: 1em;
+    color: #bde0fe;
 }
