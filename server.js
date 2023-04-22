@@ -13,6 +13,9 @@ app.use(express.urlencoded({extended:true}))
 app.get('/', (req,res)=>{
     res.render('pages/home')
 })
+app.get('/signUp', (req,res)=>{
+    res.render('pages/signUp')
+})
 
 app.listen(port, ()=>{
     console.log(`connected to the port ${port}`);
