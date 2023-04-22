@@ -3,7 +3,7 @@
 nav {
     font-family: 'Poppins', sans-serif;
     border-radius: 50px !important;
-    padding: 10px 40px !important;
+    /* padding: 10px 40px !important; */
 }
 
 a.nav-link {

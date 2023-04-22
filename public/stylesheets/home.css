@@ -18,6 +18,7 @@
 }
 .main-p{
     margin-top: 2em;
+    margin-bottom: 0.5em;
     font-size: 4em;
     color: #86FF70;
 }
@@ -26,6 +27,7 @@ button{
     border:2px solid #86FF70;
     background-color: #86FF70;
     font-size: 1.5em;
+    text-decoration: none;
     padding: 1em 2em 1em 2em;
     border-radius: 2em;
     transition: all 0.5s;
