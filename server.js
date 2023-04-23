@@ -22,13 +22,19 @@ app.get('/signUp', (req,res)=>{
     res.render('pages/signUp')
 });
 app.post('/signUp', async (req,res)=>{
+    const {id} = req.params;
     const user = new UserSchema(req.body);
     await user.save();
-    res.send("working");
+    res.redirect(`/${id}/dashboard`);
     console.log(user)
 })
 app.get('/signIn', (req,res)=>{
     res.render('pages/signIn')
+});
+app.get('/:id/dashboard', (req,res)=>{
+    const {id} = req.params;
+    const user = UserSchema.findById(id);
+    res.render('pages/dashboard', {user})
 })
 
 app.listen(port, ()=>{
