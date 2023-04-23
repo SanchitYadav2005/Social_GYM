@@ -7,7 +7,7 @@ const UserSchema = require('./Schemas/userSchema');
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb://localhost:27017/socialGym');
+mongoose.connect("mongodb://localhost:27017/socialGym");
 
 app.engine('ejs', ejsMate)
 app.set('view engine', 'ejs');
@@ -22,9 +22,10 @@ app.get('/signUp', (req,res)=>{
     res.render('pages/signUp')
 });
 app.post('/signUp', async (req,res)=>{
-    const {fname, lname, username, passowrd} = req.body;
-    const user = new UserSchema(fname, lname,username,passowrd);
+    const user = new UserSchema(req.body);
     await user.save();
+    res.send("working");
+    console.log(user)
 })
 app.get('/signIn', (req,res)=>{
     res.render('pages/signIn')
