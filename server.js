@@ -7,7 +7,7 @@ const UserSchema = require('./Schemas/userSchema');
 const mongoose = require('mongoose');
 
 
-mongoose.connect("mongodb://localhost:27017/socialGym");
+mongoose.connect('mongodb://127.0.0.1:27017/socialGym');
 
 app.engine('ejs', ejsMate)
 app.set('view engine', 'ejs');
