@@ -16,6 +16,9 @@ app.get('/', (req,res)=>{
 app.get('/signUp', (req,res)=>{
     res.render('pages/signUp')
 })
+app.get('/signIn', (req,res)=>{
+    res.render('pages/signIn')
+})
 
 app.listen(port, ()=>{
     console.log(`connected to the port ${port}`);
