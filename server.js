@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 const passport = require("passport");
 const localStrategy = require("passport-local");
 const session = require("express-session");
+const { error } = require('console');
 
 
 mongoose.connect('mongodb://127.0.0.1:27017/socialGym');
@@ -45,7 +46,7 @@ app.post('/signUp', async (req,res)=>{
 app.get('/signIn', (req,res)=>{
     res.render('pages/signIn')
 });
-app.post('/signIn', passport.authenticate('local', {failureRedirect: '/signIn'}), (req,res)=>{
+app.post('/signIn', passport.authenticate('local', {failureMessage: error}), (req,res)=>{
     console.log(req.body)
     res.redirect('/dashboard')
 })
