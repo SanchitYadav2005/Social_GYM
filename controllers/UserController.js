@@ -1,5 +1,5 @@
 const catchAsync = require('../utils/catchAsync');
-const User = require('./Schemas/userSchema');
+const User = require('../Schemas/userSchema');
 
 module.exports.signUp = catchAsync((req,res)=>{
     res.render("pages/signUp")
