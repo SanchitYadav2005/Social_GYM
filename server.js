@@ -19,7 +19,20 @@ app.use(express.urlencoded({extended:true}));
 app.get('/', (req,res)=>{
     res.render('pages/home')
 })
-
+app.get('/signUp', (req,res)=>{
+    res.render("pages/signUp")
+})
+app.post('/signUp', async(req,res)=>{
+    const user = new User(req.body);
+    await user.save();
+    const id = user.id
+    res.redirect(`/${id}/dashboard`)
+})
+app.get('/:id/dashboard', (req,res)=>{
+    const {id} = req.params;
+    const user = User.findById(id);
+    res.render('pages/dashboard', {user});
+})
 
 app.listen(port, ()=>{
     console.log(`connected to the port ${port}`);
