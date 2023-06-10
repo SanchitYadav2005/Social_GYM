@@ -7,6 +7,9 @@ const mongoose = require('mongoose');
 const ExpressError = require('./utils/expressError');
 const userRoutes = require('./routes/userRoutes');
 const session = require('express-session');
+const User = require('./Schemas/userSchema')
+const passport = require('passport');
+const LocalStrategy = require('passport-local');
 
 
 mongoose.connect('mongodb://127.0.0.1:27017/socialGym');
@@ -31,8 +34,11 @@ const sessionConfig = {
 
 app.use(session(sessionConfig))
 
-
-
+app.use(passport.initialize())
+app.use(passport.session())
+passport.use(new LocalStrategy(User.authenticate()))
+passport.serializeUser(User.serializeUser())
+passport.deserializeUser(User.deserializeUser())
 
 
 
