@@ -6,20 +6,10 @@ module.exports.signUp = catchAsync((req, res) => {
 });
 
 module.exports.createUser = catchAsync(async (req, res, next) => {
-    try {
-        const {password} = req.body;
         const user = new User(req.body);
         await user.save();
-        const registeredUser = await User.register(user, password);
-        req.login(registeredUser, err=>{
-            if(err) return next(err)
-            const id = user.id;
-            res.redirect(`/${id}/dashboard`)
-        })
-    }
-    catch(e){
-        console.log(e)
-    }
+        const id = user.id;
+        res.redirect(`/${id}/dashboard`)
 });
 
 module.exports.dashboard = catchAsync(async (req, res, next) => {
@@ -33,8 +23,8 @@ module.exports.signIn = (req, res) => {
 };
 
 module.exports.loginUser = (req,res) => {
-    const {id} = req.params;
-    const user = User.findById(id)
-    res.redirect(`/${id}/dashboard`, {user});
+    res.send(req.body)
 }
+    
+
 

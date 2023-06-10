@@ -10,6 +10,6 @@ router.route('/:id/dashboard')
     .get(userController.dashboard)
 router.route('/signIn')
     .get(userController.signIn)
-    .post(passort.authenticate('local', {failureFlash: true, failureRedirect:'/signIn', keepSessionInfo: true}),userController.loginUser)
+    .post(userController.loginUser)
 
 module.exports = router
