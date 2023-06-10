@@ -7,5 +7,7 @@ router.route('/signUp')
     .post(userController.createUser)
 router.route('/:id/dashboard')
     .get(userController.dashboard)
+router.route('/signIn')
+    .get(userController.signIn)
 
 module.exports = router

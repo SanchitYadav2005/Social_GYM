@@ -16,4 +16,9 @@ module.exports.dashboard = catchAsync(async(req,res,next)=>{
     const {id} = req.params;
     const user = await User.findById(id);
     res.render('pages/dashboard', {user});
-})
+});
+
+module.exports.signIn = (req,res) => {
+    res.render('pages/signIn')
+};
+
