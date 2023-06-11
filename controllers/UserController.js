@@ -23,7 +23,9 @@ module.exports.signIn = (req, res) => {
     res.render('pages/signIn')
 };
 
-
+module.exports.login = (req,res) => {
+    res.redirect("/")
+}
     
 
 

@@ -6,13 +6,19 @@ const passport = require('passport');
 router.route('/signUp')
     .get(userController.signUp)
     .post(userController.createUser)
+
 router.route('/:id/dashboard')
     .get(userController.dashboard)
-router.get('/signIn', (req,res)=>{
-    res.render('pages/signIn')
-})
-router.post('/signIn',passport.authenticate('local', {failureMessage:"error", failureRedirect: '/signIn'}), (req,res)=>{
-    res.redirect('/')
-})
+
+router.route('/signIn')
+    .get(userController.signIn)
+    .post(
+        passport.authenticate('local', 
+        {
+            failureMessage:"error", 
+            failureRedirect: '/signIn', 
+            keepSessionInfo: true
+        }), 
+        userController.login)
 
 module.exports = router
