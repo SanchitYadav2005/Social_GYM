@@ -6,10 +6,7 @@ module.exports.signUp = catchAsync((req, res) => {
 });
 
 module.exports.createUser = catchAsync(async (req, res, next) => {
-        const user = new User(req.body);
-        await user.save();
-        const id = user.id;
-        res.redirect(`/${id}/dashboard`)
+        res.send(req.body)
 });
 
 module.exports.dashboard = catchAsync(async (req, res, next) => {
