@@ -40,7 +40,11 @@ passport.use(new LocalStrategy(User.authenticate()))
 passport.serializeUser(User.serializeUser())
 passport.deserializeUser(User.deserializeUser())
 
-
+// app.get('/fakeUser', async(req,res)=>{
+//     const user = new User({fname: 'sanchit', lname: 'yadav', username:'syadav'})
+//     const newUser = await User.register(user, 'cicken')
+//     res.send(newUser);
+// })
 
 app.use('/', userRoutes)
 
