@@ -23,9 +23,7 @@ module.exports.signIn = (req, res) => {
     res.render('pages/signIn')
 };
 
-module.exports.loginUser = (req,res) => {
-    res.send(req.body)
-}
+
     
 
 
