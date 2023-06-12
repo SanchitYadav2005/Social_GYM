@@ -22,5 +22,5 @@ router.route('/signIn')
         userController.login)
 router.route('/:id/edit')
         .get(userController.editUserForm)
-
+        .put(userController.editUser)
 module.exports = router

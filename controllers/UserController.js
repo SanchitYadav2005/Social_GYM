@@ -19,7 +19,7 @@ module.exports.editUserForm = async (req,res) => {
 }
 module.exports.editUser = catchAsync(async(req,res)=>{
     const {id} = req.params;
-    const user = await User.findOneAndUpdate(id)
+    const user = await User.findOneAndUpdate(id, req.body)
     await user.save()
     console.log(user)
 })

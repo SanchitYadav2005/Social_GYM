@@ -1,1 +1,30 @@
-<h1>edit user <%= user.username %></h1>
+<title><%= user.fname %> | edit</title>
+<link rel="stylesheet" href="/stylesheets/signUp.css">
+<body id="bg-svg">
+    <section>
+        <h1 class="first-heading">First step to your dream physique</h1>
+        <form action="/<%= user.id %>/edit?method=put" method="post">
+            <div class="container">
+                <label for="fname" class="form-label">
+                    First name
+                </label>
+                <input type="text" id="fname" value="<%= user.fname %>" name="fname">
+            </div>
+            
+            <div class="container">
+                <label for="lname" class="form-label">
+                    Last name
+                </label>
+                <input type="text" id="lname" value="<%= user.lname %>" name="lname">
+            </div>
+            
+            <div class="container">
+                <label for="username" class="form-label">
+                    Username
+                </label>
+                <input type="text" id="username" value="<%= user.username %>" name="username">
+            </div>
+            <button>Edit Account</button>
+        </form>
+    </section>
+</body>
