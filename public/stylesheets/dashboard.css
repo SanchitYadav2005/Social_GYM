@@ -10,7 +10,10 @@
     margin-left: 0.6em;
     margin-bottom: 2em;
 }
-a{
+.edit-link{
+    color: #86FF70;
+}
+.h-link{
     font-size: 2em;
 }
 
@@ -25,4 +28,16 @@ a{
 .card-span{
     margin-top: 0;
     color: #bbdef0;
+    display: block;
+}
+
+.edit-btn{
+    text-decoration: none;
+    margin-right: 0.6em;
+    font-size: 2em;
+}
+.card-nav{
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
 }

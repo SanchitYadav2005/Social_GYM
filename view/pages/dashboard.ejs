@@ -3,7 +3,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body class="dashboard-body">
     <div class="card">
-        <a class="h-link" href="/"><i class="fa-solid fa-house fa-lg home-link"></i></a>
+        <div class="card-nav">
+            <a class="h-link" href="/"><i class="fa-solid fa-house fa-lg home-link"></i></a>
+            <a href="/<%= user.id %>/edit" class="edit-btn"><i class="fa-solid fa-user-pen edit-link"></i></a>
+        </div>
         <h1 class="card-heading"><%= user.username %></h1>
         <span class="card-span"><%= user.fname %> <%= user.lname %></span>
     </div>

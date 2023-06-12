@@ -12,6 +12,17 @@ module.exports.createUser = catchAsync(async (req, res, next) => {
         const registeredUser = await User.register(user, password)
         res.redirect(`/${id}/dashboard`)
 });
+module.exports.editUserForm = async (req,res) => {
+    const {id} = req.params;
+    const user = await User.findById(id)
+    res.render('pages/edit', {user})
+}
+module.exports.editUser = catchAsync(async(req,res)=>{
+    const {id} = req.params;
+    const user = await User.findOneAndUpdate(id)
+    await user.save()
+    console.log(user)
+})
 
 module.exports.dashboard = catchAsync(async (req, res, next) => {
     const { id } = req.params;

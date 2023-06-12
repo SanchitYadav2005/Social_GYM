@@ -20,5 +20,7 @@ router.route('/signIn')
             keepSessionInfo: true
         }), 
         userController.login)
+router.route('/:id/edit')
+        .get(userController.editUserForm)
 
 module.exports = router
