@@ -1,4 +1,8 @@
 <title><%= user.fname %> | dashobard</title>
-<div>
-    <h1><%= user.fname %> <%= user.lname %></h1>
-</div>
+<link rel="stylesheet" href="/stylesheets/dashboard.css">
+<body class="dashboard-body">
+    <div class="card">
+        <h1 class="card-heading"><%= user.username %></h1>
+        <span class="card-span"><%= user.fname %> <%= user.lname %></span>
+    </div>
+</body>
