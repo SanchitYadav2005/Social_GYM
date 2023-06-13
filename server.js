@@ -10,6 +10,7 @@ const session = require('express-session');
 const User = require('./Schemas/userSchema')
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
+const postRoutes = require('./routes/postRoutes');
 // const methodOverride = require('method-override');
 
 mongoose.connect('mongodb://127.0.0.1:27017/socialGym');
@@ -48,6 +49,7 @@ passport.deserializeUser(User.deserializeUser())
 // })
 
 app.use('/', userRoutes)
+app.use('/', postRoutes)
 
 app.get('/', (req,res)=>{
     res.render('pages/home')
