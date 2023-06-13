@@ -6,7 +6,7 @@ const passport = require('passport');
 router.route('/signUp')
     .get(userController.signUp)
     .post(userController.createUser)
-
+    
 router.route('/:id/dashboard')
     .get(userController.dashboard)
 
