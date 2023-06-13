@@ -41,3 +41,26 @@
     align-items:baseline;
     justify-content: space-between;
 }
+
+.goto-btn{
+    margin-top: 3em;
+    margin-left: 20%;
+}
+
+.btn{
+    color: white;
+    text-decoration: none;
+    border: 3px solid #57cc99;
+    padding: 0.5em 3em 0.5em 3em;
+    transition: all 0.5ms;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    box-shadow: #57cc99 0px 5px 15px;
+    background-color: #57cc99;
+}
+
+#margin-left{
+    margin-left: 2em;
+}
