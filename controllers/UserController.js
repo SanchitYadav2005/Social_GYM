@@ -35,7 +35,7 @@ module.exports.signIn = (req, res) => {
 };
 
 module.exports.login = (req,res) => {
-    res.redirect("/")
+    res.redirect("/posts")
 }
     
 
