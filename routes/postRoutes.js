@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/posts', (req,res)=>{
-    res.send(" posts will display here!")
+    res.render('pages/posts')
 })
 router.get("/createPost", (req,res)=>{
     res.send("you post will be created here")
