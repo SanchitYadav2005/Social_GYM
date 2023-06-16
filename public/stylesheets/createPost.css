@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    background-color: #36454f;
+}
+.post-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 29%;
+    margin-top: 1.3em;
+    font-family: 'Open Sans', sans-serif;
+    border: 3px solid #86FF70;
+    box-shadow: #86FF70 0px 5px 15px;
+    width: fit-content;
+    padding: 3em 3em 3em 3em ;
+    border-radius: 10px;
+}   
+label{
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: #86FF70;
+    font-weight: bolder;
+}
+input, textarea{
+    margin-bottom: 1em;
+    border: hidden;
+    background: transparent;
+    font-size: 1.2em;
+    color: white;
+}
+input{
+    padding: 0.3em 0.3em 0.3em 0.3em;
+    border-bottom: 3px solid #86FF70;
+}
+textarea{
+    padding: 0.3em 0.3em 0.3em 0.3em;
+    border-bottom: 3px solid #86FF70;
+}
+input:focus,textarea:focus{
+    outline: none;
+}
+.btn-container{
+    margin-top: 3em;
+    margin-left: 8em;
+}
+button{
+    background-color: #86FF70;
+    font-size: 1.2em;
+    padding: 1em 3em 1em 3em;
+    border-radius: 10px;
+    border: hidden;
+    cursor: pointer;
+    color: black;
+    transition: all 0.3s;
+}
+button:hover{
+    box-shadow: #86FF70 0px 5px 15px;
+}
