@@ -2,12 +2,12 @@ const mongoose = require("mongoose");
 const {Schema} = mongoose;
 
 
-const ImageSchema = new Schema({
-    url: String,
-    filename: String
-})
+
 const postSchmea = new Schema({
-    image: [ImageSchema],
+    images: {
+        url: String,
+        filename: String
+    },
     title: String,
     description: String
 });

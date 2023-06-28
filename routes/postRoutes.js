@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const postController = require('../controllers/PostControllers');
+const {storage} = require('../cloudinary')
 const multer = require('multer');
-const upload = multer({dest: 'uploads/'})
+const upload = multer({storage})
 
 router.get('/posts', (req,res)=>{
     res.render('pages/posts')
