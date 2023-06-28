@@ -9,6 +9,6 @@ router.get('/posts', (req,res)=>{
     res.render('pages/posts')
 })
 router.get('/createPost', postController.sendPostForm);
-router.post('/createPost',upload.array('images'), postController.createPost);
+router.post('/createPost',upload.array('photos'), postController.createPost);
 
 module.exports = router;
