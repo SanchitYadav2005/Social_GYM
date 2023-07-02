@@ -64,20 +64,21 @@ button:hover{
   }
   
   .btn {
-    border: 2px solid gray;
-    color: gray;
-    background-color: white;
+    color:#36454f;
+    background-color: #86FF70;
     padding: 8px 20px;
     border-radius: 8px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: lighter;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 30%;
   }
-  
+
   .upload-btn-wrapper input[type=file] {
     font-size: 100px;
     position: absolute;
     left: 0;
     top: 0;
     opacity: 0;
-    cursor: pointer;
   }
