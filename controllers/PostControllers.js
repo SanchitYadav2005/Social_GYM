@@ -8,7 +8,6 @@ module.exports.sendPostForm = (req,res)=>{
 
 module.exports.createPost = catchAsync(async (req,res)=>{
     const post = new Post(req.body)
-    // post.images = req.files.map(f => ({url: f.path, filename: f.filename}));
     await post.save()
     res.redirect('/posts')
 })
